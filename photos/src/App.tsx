@@ -9,11 +9,11 @@ interface CollectionType {
 }
 
 const categories = [
-    {"name": "Все"},
-    {"name": "Море"},
-    {"name": "Горы"},
-    {"name": "Архитектура"},
-    {"name": "Города"}
+    {"name": "All"},
+    {"name": "Sea"},
+    {"name": "Mountains"},
+    {"name": "Architecture"},
+    {"name": "Cities"}
 ]
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
 
     return (
         <div className="App">
-            <h1>Моя коллекция фотографий</h1>
+            <h1>My collection of photos</h1>
             <div className="top">
                 <ul className="tags">
                     {
@@ -49,7 +49,7 @@ function App() {
                 <input
                     value={searchValue}
                     onChange={(e) => setSearchValue(e.currentTarget.value)}
-                    className="search-input" placeholder="Поиск по названию"/>
+                    className="search-input" placeholder="Search by title"/>
             </div>
             <div className="content">
                 {
